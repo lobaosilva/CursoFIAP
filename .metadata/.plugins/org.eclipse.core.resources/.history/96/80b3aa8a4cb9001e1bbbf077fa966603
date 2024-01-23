@@ -1,0 +1,18 @@
+package br.com.fiap.view;
+
+public class TestException {
+
+	public static void main(String[] args) throws DivisaoPorZeroException {
+		
+		try {
+			// Trecho onde a exceção pode ocorrer
+			int val = 10 / 0;
+			System.out.println(val);
+		} catch (Exception e) { // Captura da exceção
+			// Tratamento da exceção
+			e.printStackTrace();
+		}
+
+	}
+
+}
